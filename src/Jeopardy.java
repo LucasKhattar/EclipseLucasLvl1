@@ -111,8 +111,13 @@ public class Jeopardy implements ActionListener {
 		
 		
 		// If the buttonPressed was the firstButton
+		if(firstButton==buttonPressed){
+		askQuestion("What runs with four i's?", "What is the Mississippi River?" , 700);	
+		}
 		
-			// Call the askQuestion() method
+			if(secondButton==buttonPressed){
+			askQuestion("A fish without an eye", "What is a eyeless fish?", 1000);
+			}
 			
 			// Fill in the askQuestion() method. When you play the game, the score should change.
 		
@@ -127,25 +132,21 @@ public class Jeopardy implements ActionListener {
 	}
 
 	private void askQuestion(String question, String correctAnswer, int prizeMoney) {
-		// Remove this temporary message
-		JOptionPane.showMessageDialog(null, "this is where the question will be asked");
 		// Use a pop up to ask the user the question
-	
+		String awnser = JOptionPane.showInputDialog(null, question);
 		// If the answer is correct
+		if(awnser.equals(correctAnswer)){
+			score = score+prizeMoney;
+			updateScore();
+			JOptionPane.showMessageDialog(null, "You got that question correct!!:D");
+		}
 		
-			// Increase the score by the prizeMoney
-			
-			// Call the updateScore() method
-			
-			// Pop up a message to tell the user they were correct
-			
-		// Otherwise
-		
-			// Decrement the score by the prizeMoney
-			
-			// Pop up a message to tell the user the correct answer
-			
-			// Call the updateScore() method
+		else{
+		score = score-prizeMoney;
+		JOptionPane.showMessageDialog(null, "You got the question incorrect... The correct answer was 'What is '"+correctAnswer+"'");
+		updateScore();
+		}
+	
 			
 		
 	}
