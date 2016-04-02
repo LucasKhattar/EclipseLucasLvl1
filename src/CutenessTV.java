@@ -13,7 +13,6 @@ public class CutenessTV implements ActionListener {
 	JButton button1 = new JButton();
 	JButton button2 = new JButton();
 
-	
 	public static void main(String[] args) {
 		CutenessTV cute = new CutenessTV();
 		cute.showTV();
@@ -63,19 +62,16 @@ public class CutenessTV implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton button3 = (JButton) e.getSource();
-		
-if(button3.equals(button))
-{
-	showDucks();
-}
-if(button3.equals(button1))
-{
-	showFrog();	
-}
-if(button3.equals(button2))
-{
-	 showFluffyUnicorns();
-}
+
+		if (button3.equals(button)) {
+			showDucks();
+		}
+		if (button3.equals(button1)) {
+			showFrog();
+		}
+		if (button3.equals(button2)) {
+			showFluffyUnicorns();
+		}
 	}
 
 }
