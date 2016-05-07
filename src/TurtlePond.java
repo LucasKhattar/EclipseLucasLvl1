@@ -66,7 +66,9 @@ public class TurtlePond implements KeyEventDispatcher {
 		}
 		System.out.println(tortoiseLocationX + "X, " + tortoiseLocationY + "Y");
 		// 11. If more than 20 seconds have elapsed, tell them the turtle died of hunger!
-
+		if (getTimeElapsed() >= 20) {
+			JOptionPane.showMessageDialog(null, "You Died Of Hunger!");
+		}
 		// 12. If the Tortoise crosses it's own path, tell them they failed and move them back to the beginning
 
 	}
