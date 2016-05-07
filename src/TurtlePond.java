@@ -16,12 +16,13 @@ import org.teachingextensions.logo.Tortoise;
 
 public class TurtlePond implements KeyEventDispatcher {
 
-	int cookieX = 123;
-	int cookieY = 321;
+	int cookieX = 300;
+	int cookieY = 400;
 	int speed = 7;
+
 	void setup() {
 		JOptionPane.showMessageDialog(null, "Move the turtle with the arrow keys to find the hidden cookie.\nYou'll get warmer the closer you get.\nHurry or he'll die of hunger!");
-		
+
 		showCookie();
 	}
 
@@ -34,39 +35,45 @@ public class TurtlePond implements KeyEventDispatcher {
 	}
 
 	private void goLeft() {
-		// 5. make the tortoise move left at the specified speed (3 lines of code)
 		Tortoise.turn(270);
 		Tortoise.move(speed);
 		Tortoise.turn(90);
-
 	}
 
 	private void goRight() {
-		// 6. use the speed variable to make the tortoise move right
-		
+		Tortoise.turn(90);
+		Tortoise.move(speed);
+		Tortoise.turn(270);
 	}
 
 	private void checkForFood() throws Exception {
 		int tortoiseLocationX = Tortoise.getX();
 		int tortoiseLocationY = Tortoise.getY();
-
-		// 7. If the Tortoise is within 100 pixels of the food, set the background color to yellow
-
-		// 8. If the Tortoise is within 50 pixels of the food, set the background color to orange
-
-		// 9. If the Tortoise is within 20 pixels of the food, set the background color to red
-
-		// 10. If the Tortoise is within 5 pixels of the cookie, make a pop-up to tell them they found it
-				
+		if (tortoiseLocationX >= 295 && tortoiseLocationY <= 405 && tortoiseLocationX >= 195 && tortoiseLocationY >= 295 && tortoiseLocationX <= 305 && tortoiseLocationY <= 505
+				&& tortoiseLocationX <= 305 && tortoiseLocationY <= 405) {
+			JOptionPane.showMessageDialog(null, "You Got The Cookie!");
+		} else if (tortoiseLocationX >= 280 && tortoiseLocationY <= 420 && tortoiseLocationX >= 280 && tortoiseLocationY >= 380 && tortoiseLocationX <= 320
+				&& tortoiseLocationY <= 420 && tortoiseLocationX <= 320 && tortoiseLocationY <= 420) {
+			setBackgroundColor(Color.red);
+		} else if (tortoiseLocationX >= 250 && tortoiseLocationY <= 450 && tortoiseLocationX >= 250 && tortoiseLocationY >= 350 && tortoiseLocationX <= 350
+				&& tortoiseLocationY <= 450 && tortoiseLocationX <= 350 && tortoiseLocationY <= 450) {
+			setBackgroundColor(Color.orange);
+		} else if (tortoiseLocationX >= 200 && tortoiseLocationY <= 500 && tortoiseLocationX >= 200 && tortoiseLocationY >= 300 && tortoiseLocationX <= 400
+				&& tortoiseLocationY <= 500 && tortoiseLocationX <= 400 && tortoiseLocationY <= 500) {
+			setBackgroundColor(Color.yellow);
+		} else {
+			setBackgroundColor(Color.gray);
+		}
+		System.out.println(tortoiseLocationX + "X, " + tortoiseLocationY + "Y");
 		// 11. If more than 20 seconds have elapsed, tell them the turtle died of hunger!
 
 		// 12. If the Tortoise crosses it's own path, tell them they failed and move them back to the beginning
 
 	}
-	
+
 	private long getTimeElapsed() {
-		 Date currentTime = new Date();
-		 return (currentTime.getTime() - startTime.getTime())/1000;
+		Date currentTime = new Date();
+		return (currentTime.getTime() - startTime.getTime()) / 1000;
 	}
 
 	private void setBackgroundColor(Color color) {
