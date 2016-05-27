@@ -36,7 +36,7 @@ public class AnimalJumping {
 		panel.add(label);
 		frame.setLocationRelativeTo(null);
 		frame.pack();
-		frame.setTitle("Gerbil Fail");
+		frame.setTitle("Fail");
 	}
 
 	static JLabel createImage(String imageURL) throws MalformedURLException {
