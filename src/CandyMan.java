@@ -64,7 +64,7 @@ File soundFile = null;
 		 Clip clip = AudioSystem.getClip();
 		 clip.open(audioInputStream);
 		 clip.start();
-		 Thread.sleep(3400);
+//		 Thread.sleep(3400);
 	 } catch (Exception ex) {
 		 ex.printStackTrace();
 	 }
