@@ -23,10 +23,6 @@
 /Fart.class
 /Flo Rida - My House [Official Video].mp3
 /FortuneCookie.class
-/FortuneTeller.class
-/GridWorld.class
-/JamesBond.class
-/Jeopardy.class
 /OpticalIllusion1 3.jpg
 /OpticalIllusion2 2.png
 /Pencil.class
@@ -44,9 +40,12 @@
 /hekko 2.jpg
 /hekko.png
 /imgres-1.jpg
+/imgres-1.png
 /imgres-2.jpg
+/imgres-2.png
 /imgres-3.jpg
 /imgres.jpg
+/imgres.png
 /llama.wav
 /new optical illusions (30).JPG
 /spongebob.wav
@@ -57,8 +56,12 @@
 /x.png
 /z.png
 /Cup.class
+/FortuneTeller.class
+/GridWorld.class
 /Hero.class
 /Human.class
+/JamesBond.class
+/Jeopardy.class
 /Jukebox.class
 /Kettle$Water.class
 /Kettle.class
@@ -80,6 +83,7 @@
 /RobotArmy.class
 /Runner.class
 /SensitiveKeyboard.class
+/SimonSays.class
 /SimonSaysRecipe.class
 /SlotMashine.class
 /Smurf.class
@@ -104,7 +108,5 @@
 /opticalllusions.class
 /race.class
 /runners.class
-/SimonSays.class
-/imgres.png
-/imgres-2.png
-/imgres-1.png
+/nastySuprises.class
+/SpellingBee.class
