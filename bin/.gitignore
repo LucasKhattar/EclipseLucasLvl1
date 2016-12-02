@@ -18,11 +18,7 @@
 /Driver.class
 /DuellingButtons.class
 /EasyButton.class
-/EatMe$race.class
-/EatMe.class
-/Fart.class
 /Flo Rida - My House [Official Video].mp3
-/FortuneCookie.class
 /OpticalIllusion1 3.jpg
 /OpticalIllusion2 2.png
 /Pencil.class
@@ -56,6 +52,10 @@
 /x.png
 /z.png
 /Cup.class
+/EatMe$race.class
+/EatMe.class
+/Fart.class
+/FortuneCookie.class
 /FortuneTeller.class
 /GridWorld.class
 /Hero.class
@@ -91,6 +91,7 @@
 /Song.class
 /SpamALot$1.class
 /SpamALot.class
+/SpellingBee.class
 /SuperHero.class
 /TeaBag.class
 /TeaMaker.class
@@ -105,8 +106,10 @@
 /getFriends.class
 /houses.class
 /iRock.class
+/nastySuprises.class
 /opticalllusions.class
 /race.class
 /runners.class
-/nastySuprises.class
-/SpellingBee.class
+/PigLatinConverter.class
+/PigLatin.class
+/Caculator.class
