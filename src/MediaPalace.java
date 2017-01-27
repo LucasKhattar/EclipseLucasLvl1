@@ -70,8 +70,9 @@ public class MediaPalace {
 	}
 
 	/* If you want to use an mp3, you must first convert it to a .wav file on http://media.io */
-	public AudioClip loadSound(String fileName) {
-		return JApplet.newAudioClip(getClass().getResource(fileName));
+	public void playSound(String fileName) {
+		AudioClip clip = JApplet.newAudioClip(getClass().getResource(fileName));
+		clip.play();
 	}
 
 	public void playSoundFromInternet(String soundURL) {

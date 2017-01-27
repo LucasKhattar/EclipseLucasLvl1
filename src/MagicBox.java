@@ -75,8 +75,16 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		extensionObj.playSoundFromInternet("www.youtube.com/watch?v=BPd3-ZGgmQg");		
 		
+		if(e.getX()>=66   && e.getY()>=86){
+			if(e.getX()<=86   && e.getY()<=106){
+			extensionObj.playSound("nope.wav");	
+			}
+		}
+		else{
+			
+		}
+		System.out.println(e.getX()+","+ e.getY());
 	}
 
 	@Override
